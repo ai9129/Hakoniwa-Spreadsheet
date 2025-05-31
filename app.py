@@ -143,6 +143,10 @@ def update_spreadsheet(products):
         body=body
     ).execute()
 
+@app.route('/', methods=['GET'])
+def index():
+    return 'Hakoniwa Spreadsheet API is running.'
+
 @app.route('/update', methods=['POST'])
 def update_data():
     try:
