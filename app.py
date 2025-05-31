@@ -138,7 +138,7 @@ def update_spreadsheet(products):
     # スプレッドシートの更新
     service.spreadsheets().values().update(
         spreadsheetId=SPREADSHEET_ID,
-        range='Sheet1!A2',  # ヘッダー行の下から開始
+        range='シート1!A2',  # ヘッダー行の下から開始
         valueInputOption='RAW',
         body=body
     ).execute()
